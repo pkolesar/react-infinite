@@ -377,8 +377,7 @@ var Infinite = React.createClass({
   },
 
   handleScroll(scrollTop: number) {
-    this.shouldAttachToBottom = this.computedProps.displayBottomUpwards &&
-        scrollTop >= this.getLowestPossibleScrollTop();
+    this.shouldAttachToBottom = true;
 
     this.manageScrollTimeouts();
 
